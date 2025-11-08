@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doutoria - Agendamento de Consultas</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="shortcut icon" href="/src/img/favicon.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+
+</head>
+<body>
+    <header>
+        <img src="/src/img/logo_sem_fundo.png" alt="Logo Doutoria, e slogan 'agende, resolva e sorria'">
+        <nav id="nav_links">
+            <a href="#">INÍCIO</a>
+            <a href="#agenda">AGENDAR CONSULTAS</a>
+            <a href="#contact">CONTATO</a>
+        </nav>
+        <div class="nav_burguer"><i class="ph ph-list"></i></div>
+    </header>
+    <main>
+        <div id="hero">
+            <div id="hero_text">
+                <h1>Bem-vindo ao Doutoria</h1>
+                <p>Agende suas consultas médicas de forma rápida e fácil.</p>
+                <a href="#agenda" class="btn_hero">Agendar Consulta</a>
+            </div>
+            <img id="hero_image" src="src/img/hero_image.png" alt="" srcset="">
+            </div>
+        <div id="agenda" >
+            <h2>Agende sua Consulta</h2>
+            <h3>Preencha todas as informações, queremos trazer o melhor serviço para você!</h3>
+            <form id="appointment_form">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="email">Telefone: (confirmaremos a consulta via WhatsApp)</label>
+                <input type="tel" id="tel" name="tel" required>
+                <br>
+                <label for="select">Especialidade:</label>
+                <select id="select_area" name="select_area" required>
+                    <option value="" disabled selected>Selecione uma especialidade</option>
+                    <option value="todas">Todas</option>
+                    <option value="clinico_geral">Clínico Geral</option>
+                    <option value="dermatologia">Dermatologia</option>
+                    <option value="cardiologia">Cardiologia</option>
+                    <option value="pediatria">Pediatria</option>
+                    <option value="ginecologia">Ginecologia</option>
+                </select>
+                <br>
+                <label for="select">Médico Especialista:</label>
+                <select id="select_doctor" name="select_doctor" required>
+                    <option value="" disabled selected>Selecione um especialista</option>
+                </select>
+                <br>
+                <label for="select">Datas Disponíveis:</label>
+                <select id="select_date" name="select_date" required>
+                    <option value="" disabled selected>Selecione uma data</option>
+                </select>
+                <br>
+                <button type="submit">Agendar</button>
+            </form>
+        </div>
+        <div id="contact">
+            <div class="contact_show">
+                <h2>Contato</h2>
+                <p>Se você tiver alguma dúvida ou precisar de assistência, entre em contato conosco:</p>
+            </div>
+            
+            <div class="contact_ways">
+                <div class="contact_way">
+                    <i class="ph ph-whatsapp-logo"></i>
+                    <p>WhatsApp: (11) 91234-5678</p>  
+                </div>
+                <div class="contact_way">
+                    <i class="ph ph-envelope-open"></i>
+                    <p>Email: doutoriaSAC@duvidas.com
+                </div>
+                <div class="contact_way">
+                   <i class="ph ph-phone"></i>
+                   <p> 0800-123-4567</p>
+                </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Doutoria. Todos os direitos reservados.</p>
+    </footer>
+    <script src="src/js/scripts.js"></script>
+</body>
+</html>

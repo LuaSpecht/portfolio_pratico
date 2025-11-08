@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+
+}
+header {
+    background:linear-gradient(90deg, #fff, #29a5ac);
+    color: #fff;
+    max-height: 90px;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+header img{
+    width: 230px;
+    height: 100px;
+    margin-right: 15px;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header .nav_burguer{
+    display: none;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+main #hero, main #contact{
+    display: flex;
+    width: 100%;
+    flex-direction: row;    
+    text-align: center;
+    margin-bottom: 40px;
+    min-height: fit-content;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0rem 10rem;
+}
+
+main #hero #hero_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #hero #hero_text .btn_hero{
+    background-color: #29a5ac;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+main #hero img{
+    width: 300px;
+    height: auto;
+    margin-top: 10px;   
+}
+
+main #agenda{
+    margin-top: 30px;
+    background-color: #29a5ac;
+    width: 80%;
+    min-height: 400px;
+    border: 2px solid #29a5ac20;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main #agenda h2{
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+main #agenda h3{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+main #agenda form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    margin-top: 30px;
+    font-size: 18px;
+}
+ 
+main #agenda form select{
+    min-width: 200px;
+    height: 25px;
+    background-color: #29a5ac10;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+}
+
+main #agenda form select option{
+    background-color: #29a5ac;
+    border: 1px solid #fff; 
+    color: #fff;
+}
+
+main #agenda form select option:disabled{
+    background-color: #fff;
+}
+
+main #agenda form button{
+    margin-top: 10px;
+    background-color: #fff;
+    color: #29a5ac; 
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+main #contact{
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 45px;
+    padding: 50px;
+    background:linear-gradient(90deg, #fff, #29a5acdd);
+}
+
+main #contact .contact_show{
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main #contact .contact_ways{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+main #contact .contact_ways .contact_way{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+
+footer {
+    background-color: #29a5ac;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    *{
+        box-sizing: border-box;
+    }
+    p{
+        font-size: 1rem;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        height: auto;
+        justify-content: space-between;
+    }
+    header img {
+        width: 150px;
+        height: auto;
+        margin-right: 10px;
+    }
+    header nav {
+        display: none;
+    }
+    header .nav_burguer{
+        display: block;
+    }
+    
+
+    main #hero, main #contact {
+        flex-direction: column;
+        padding: 0rem 1rem;
+    }
+
+    main #hero img {
+        max-width: 60%;
+        margin-top: 20px;
+    }
+
+    main #contact{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    main #contact .contact_show{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+
+    main #contact .contact_ways .contact_way{
+        margin: 10px 0;
+    }
+}
